@@ -1,0 +1,6 @@
+.idea
+node_modules/
+src/html/data/svg/
+package-lock.json
+.DS_Store
+

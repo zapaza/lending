@@ -1,0 +1,43 @@
+@import "base/variables";
+@import "base/functions";
+@import "base/mixins";
+
+@import "sprite/sprite";
+
+@import "base/reset";
+@import "base/fonts";
+@import "base/base";
+
+//
+// Main blocks
+// ----------------------------------------
+@import "blocks/cookies";
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/footer";
+@import "blocks/modals";
+
+
+//
+// Content blocks
+// ----------------------------------------
+@import "blocks/breadcrumbs";
+
+
+//
+// Pages
+// ----------------------------------------
+@import "pages/main";
+
+
+//
+// Import plugins styles
+// ----------------------------------------
+@import "../../../node_modules/slick-carousel/slick/slick.scss";
+@import "../../../node_modules/magnific-popup/src/css/main";
+@import "../../../node_modules/bootstrap/dist/css/bootstrap-grid.min.css";
+
+//
+// Base print styles
+// ----------------------------------------
+@import "base/print";

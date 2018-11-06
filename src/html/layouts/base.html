@@ -1,0 +1,40 @@
+{% include 'layouts/_coffee.html' %}
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content="telephone=no" name="format-detection">
+  <meta name="HandheldFriendly" content="true">
+
+  <title>{{ title }}</title>
+  <meta name="description" content="{{ description }}">
+  <meta name="keywords" content="{{ keywords }}">
+
+  <link href="css/styles.min.css" rel="stylesheet">
+
+  {% include 'layouts/_og.html' %}
+  {% include 'layouts/_favicon.html' %}
+</head>
+<body>
+  {% include 'blocks/cookies.html' %}
+
+  <div class="container">
+    <div class="content">
+      {% include 'blocks/header.html' %}
+
+      {% block content %}{% endblock %}
+    </div>
+
+    {% include 'blocks/footer.html' %}
+  </div>
+
+  {% include 'blocks/modals/feddback-modal.html' %}
+
+  <script src="js/combined.min.js"></script>
+
+  {% include 'blocks/counters.html' %}
+</body>
+</html>
