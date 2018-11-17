@@ -3,6 +3,9 @@ body {
   background: {
     color: $body-bg-color;
   };
+  font:{
+    family: $base-fonts;
+  }
 }
 
 .container {
@@ -22,12 +25,49 @@ body {
   padding: $wrapper-padding;
   min-width: $wrapper-min-width;
   max-width: $wrapper-max-width;
+  width: 100%;
 }
 
 [hidden] {
   display: none !important;
 }
 
+//btn
+
+.orange-btn{
+  width: 130px;
+  height: 30px;
+  background: linear-gradient(242.16deg, #FF5C5C 0%, #FF6B00 100%);
+  mix-blend-mode: normal;
+  //box-shadow: 0px 0px 6px rgba(255, 0, 0, 0.5);
+  border-radius: 5px;
+  display: inline-block;
+  @include transition();
+  padding-left: 17px;
+  &:hover{
+    box-shadow: 0px 0px 6px rgba(255, 0, 0, 0.5);
+    text-decoration: none;
+  }
+  span{
+    font:{
+      size: rem(14px);
+      weight: 600;
+    }
+    color: #fff;
+    letter-spacing: .05em;
+    text-align: center;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+}
+
+i.icon{
+  display: inline-block;
+  vertical-align: middle;
+  &.icon-basket{
+    @include sprite($icon-basket);
+  }
+}
 .counters {
   position: absolute;
   margin: -1px;

@@ -3,7 +3,46 @@
 {% set mainPage = true %}
 
 {% block content %}
+<section class="main">
+    <div class="wrapper">
+        <div class="main-content">
+            <div class="header-block">
+                <h1>Стабилизатор для камер <span>Gimdal S5</span></h1>
+            </div>
+            <div class="facts">
+                <ul>
+                    <li>Отслеживание лица</li>
+                    <li>Отслеживание объектов</li>
+                    <li>Автоматическая съемка панорамы</li>
+                    <li>Режим slow motion</li>
+                    <li>До 12 часов на одном заряде ( 4400 mAh )</li>
+                    <li>Встроенный power bank</li>
+                </ul>
+            </div>
+            <div class="btn-block">
+                <a href="" data-modal class="orange-btn"><span>купить за 6999 ₽</span></a>
+                <span class="sale">СКИДКА 17%</span>
+                <span class="old-price">8500₽</span>
+            </div>
+        </div>
+        <div class="main-img">
+            <img src="temp/stab.png" alt="СТАБИЛИЗАТОР ДЛЯ КАМЕР GIMBAL S5">
+        </div>
+    </div>
+</section>
 
+<section class="video">
+    <div class="video-play">
+        <div class="video-play-img">
+            <img src="temp/play.png" alt="Смотреть видео">
+        </div>
+        <span>Смотреть видео</span>
+    </div>
+    <video preload="auto" loop="loop" autoplay="autoplay">
+        <source src="https://www.nordman.ru/static/images/f_big.mp4" type="video/mp4">
+        <source src="https://www.nordman.ru//static/images/f_big.webm" type="video/webm">
+    </video>
+</section>
 
 
 {% endblock %}

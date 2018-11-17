@@ -8,19 +8,19 @@ $svg-path: '../images/vector';
     # Colors
     # http://chir.ag/projects/name-that-color
 \*------------------------------------*/
-$base-color: #000000;
+$base-color: #3D3D3D;
 
-$body-bg-color: #f9f9f9;
+$body-bg-color: #fff;
 
-$link-color: #ff0000;
+$link-color: #FF5C5C;
 $link-color--hover: darken($link-color, 5%);
 $link-color--active: darken($link-color, 10%);
-
-$gray: #b7b7b7;
-$red: #ff0000;
-$crail: #b94040;
-$baltic-sea: #29262a;
-$thunder: #181618;
+$gradient: linear-gradient(#FF6B00,#FF5C5C);
+$gray: #747474;
+$light-gray:#DCDCDC;
+$dark-gray: #3d3d3d;
+$air-gray: #f3f3f3;
+$order-gradient: linear-gradient(#FF6B00,#FFD600);
 
 /*------------------------------------*\
     # Basic typography
@@ -29,12 +29,10 @@ $font-size--root: 16px !default;
 
 $font-size: 1rem; // rem(16px)
 
-$font-size--h1: rem(40px);
-$font-size--h2: rem(32px);
-$font-size--h3: rem(24px);
-$font-size--h4: rem(18px);
-$font-size--h5: rem(16px);
-$font-size--h6: rem(16px);
+$font-size--h1: rem(25px);
+$font-size--h2: rem(23px);
+$font-size--h3: rem(18px);
+
 
 $font-size--small: 80%;
 
@@ -44,16 +42,13 @@ $font-weight--bold: 700;
 $font-weight--black: 900;
 
 $line-height: normal;
-$boldFonts: 'SourceSansPro-Bold', sans-serif;
-$lightFont: 'Oswald-ExtraLight', sans-serif;
-$regularFont: 'SourceSansPro-Regular', sans-serif;
-$oswaldBold: 'Oswald-Bold', sans-serif;
+$base-fonts: 'Montserrat', sans-serif;
 /*------------------------------------*\
     # Wrapper
 \*------------------------------------*/
 $wrapper-min-width: 280px;
-$wrapper-max-width: 1920px;
-$wrapper-padding: 0 20px;
+$wrapper-max-width: 1171px;
+$wrapper-padding: 0;
 
 /*------------------------------------*\
   # Print
@@ -63,5 +58,5 @@ $print-page-margin: 1cm;
 /*------------------------------------*\
   # Magnific-Popup settings
 \*------------------------------------*/
-$mfp-overlay-color: #000;
+$mfp-overlay-color: #fff;
 $mfp-overlay-opacity: .5;

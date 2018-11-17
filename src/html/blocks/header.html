@@ -1,5 +1,16 @@
+{% macro svg(id) %}
+<svg xmlns="http://www.w3.org/2000/svg" class="svg svg-{{id}}-dims">
+    <use xlink:href="#{{id}}"></use>
+</svg>
+{% endmacro %}
 <header class="header">
-    <div class="header-visible">
-        .header-visible-top
+    <div class="wrapper">
+        <div class="header-logo">
+            <img src="images/Logo.png" alt="">
+        </div>
+
+        <div class="header-btn">
+            <a href="" data-modal class="orange-btn"><span>купить</span><i class="icon icon-basket"></i></a>
+        </div>
     </div>
 </header>
