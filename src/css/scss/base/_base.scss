@@ -27,6 +27,31 @@ body {
   max-width: $wrapper-max-width;
   width: 100%;
 }
+ .header-block{
+    font:{
+      family: $base-fonts;
+      weight: $font-weight--semibold;
+      size:rem(23px);
+    }
+    line-height: 28px;
+    text-transform: uppercase;
+    color: $dark-gray;
+    margin-bottom: 50px;
+    h2{
+      margin-bottom: 17px;
+    }
+    p{
+      font:{
+        family: $base-fonts;
+        weight: $font-weight;
+        size:rem(16px);
+      }
+      line-height: 23px;
+      text-transform: none;
+      color: $gray;
+      letter-spacing: .5px;
+    }
+  }
 
 [hidden] {
   display: none !important;
