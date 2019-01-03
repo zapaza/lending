@@ -530,11 +530,24 @@ i.icon.icon-basket {
         color: #FF6B00; }
 .tracking {
   width: 100%;
-  background-image: url(../images/tracking-bg.jpg);
+  background-image: url(../images/traking-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 600px; }
+  height: 600px;
+  overflow-y: hidden; }
+.tracking .wrapper {
+    position: relative; }
+.tracking-stab {
+    width: 355px;
+    height: 591px;
+    position: absolute;
+    right: 0;
+    top: 160px;
+    overflow: visible; }
+.tracking-stab img {
+      display: block;
+      width: 100%; }
 .tracking .wrapper {
     display: -webkit-box;
     display: -ms-flexbox;

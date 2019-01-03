@@ -223,11 +223,31 @@
 
 .tracking{
   width: 100%;
-  background-image: url(../images/tracking-bg.jpg);
+  background-image: url(../images/traking-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 600px;
+  overflow-y: hidden;
+
+  .wrapper{
+    position: relative;
+    //overflow-x:visible ;
+    //overflow-y: hidden;
+  }
+
+  &-stab{
+    width: 355px;
+    height: 591px;
+    position: absolute;
+    right: 0;
+    top: 160px;
+    overflow: visible;
+    img{
+      display: block;
+      width: 100%;
+    }
+  }
 
 
   .wrapper{
