@@ -1,3 +1,118 @@
 .footer{
+  max-width: 1920px;
+  width: 100%;
+  margin:0 auto;
+  box-sizing: border-box;
+  padding-top: 75px;
+  position: relative;
+  background-image: url(../images/footer-bg.jpg);
+  display: block;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .wrapper{
+    height: 1050px;
 
+    .header-block{
+      max-width: 650px;
+      text-align: center;
+      margin: auto;
+      margin-bottom: 50px;
+    }
+
+    .panorama{
+      width: 90px;
+      margin: auto;
+    }
+
+  }
+  &-form{
+    position: absolute;
+    background-image: url(../images/footer-form-bg.png);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 450px;
+    box-sizing: border-box;
+    padding-top: 80px;
+    .wrapper{
+      height: auto;
+
+      .header-block{
+        color: #fff;
+        font-weight: $font-weight--semibold;
+      }
+    }
+    &-inner{
+      display: flex;
+      margin: auto;
+      max-width: 840px;
+      width: 100%;
+      flex-wrap:wrap;
+
+      input{
+        width: 270px;
+        height: 50px;
+        background: #FFFFFF;
+        box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        border:none;
+        margin-right: 30px;
+        box-sizing: border-box;
+        padding:0 20px;
+      }
+
+      button{
+        width: 230px;
+        height: 50px;
+        background: linear-gradient(77.74deg, #FF6B00 0%, #FFD600 100%);
+        box-shadow: 0px 12px 20px rgba(50, 0, 0, 0.39);
+        border-radius: 5px;
+        border: none;
+        color:#fff;
+        font:{
+          width: $font-weight--semibold;
+          size:rem(18px);
+        }
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        @include transition();
+        &:hover{
+          box-shadow: 0px 12px 20px rgba(50, 0, 0, 0.69);
+        }
+      }
+
+      p{
+        width: 100%;
+        margin-top: 10px;
+        line-height: 23px;
+        font-weight: $font-weight--lite;
+        font-size: 16px;
+        text-align: center;
+        letter-spacing: 0.05em;
+
+        color: #FFFFFF;
+      }
+    }
+
+    .policy{
+      display: block;
+      width: auto;
+      margin: auto;
+      text-align: center;
+      position: absolute;
+      bottom: 40px;
+      max-width: 290px;
+      left: 0;
+      right: 0;
+      color: #fff;
+      font{
+        size: rem(16px);
+        weight:$font-weight;
+      }
+      line-height: 23px;
+      letter-spacing: .05em;
+      opacity: .6;
+    }
+  }
 }

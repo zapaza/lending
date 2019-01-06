@@ -11,20 +11,31 @@
 // $spritesheet: width height image $spritesheet-sprites;
 $icon-basket-name: 'icon-basket';
 $icon-basket-x: 0px;
-$icon-basket-y: 0px;
+$icon-basket-y: 21px;
 $icon-basket-offset-x: 0px;
-$icon-basket-offset-y: 0px;
+$icon-basket-offset-y: -21px;
 $icon-basket-width: 18px;
 $icon-basket-height: 18px;
-$icon-basket-total-width: 18px;
-$icon-basket-total-height: 18px;
+$icon-basket-total-width: 33px;
+$icon-basket-total-height: 39px;
 $icon-basket-image: '../images/sprite.png';
-$icon-basket: (0px, 0px, 0px, 0px, 18px, 18px, 18px, 18px, '../images/sprite.png', 'icon-basket', );
-$spritesheet-width: 18px;
-$spritesheet-height: 18px;
+$icon-basket: (0px, 21px, 0px, -21px, 18px, 18px, 33px, 39px, '../images/sprite.png', 'icon-basket', );
+$icon-usb-name: 'icon-usb';
+$icon-usb-x: 0px;
+$icon-usb-y: 0px;
+$icon-usb-offset-x: 0px;
+$icon-usb-offset-y: 0px;
+$icon-usb-width: 33px;
+$icon-usb-height: 17px;
+$icon-usb-total-width: 33px;
+$icon-usb-total-height: 39px;
+$icon-usb-image: '../images/sprite.png';
+$icon-usb: (0px, 0px, 0px, 0px, 33px, 17px, 33px, 39px, '../images/sprite.png', 'icon-usb', );
+$spritesheet-width: 33px;
+$spritesheet-height: 39px;
 $spritesheet-image: '../images/sprite.png';
-$spritesheet-sprites: ($icon-basket, );
-$spritesheet: (18px, 18px, '../images/sprite.png', $spritesheet-sprites, );
+$spritesheet-sprites: ($icon-basket, $icon-usb, );
+$spritesheet: (33px, 39px, '../images/sprite.png', $spritesheet-sprites, );
 
 // The provided mixins are intended to be used with the array-like variables
 //

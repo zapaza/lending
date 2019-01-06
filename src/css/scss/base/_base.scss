@@ -16,6 +16,9 @@ body {
   & > .content {
     flex: 1 0 auto;
     position: relative;
+    max-width: 1920px;
+    width: 100%;
+    margin:0 auto;
 
   }
 }
@@ -92,6 +95,11 @@ i.icon{
   &.icon-basket{
     @include sprite($icon-basket);
   }
+
+  &-usb{
+    @include sprite($icon-usb);
+    margin-left: 20px;
+  }
 }
 .counters {
   position: absolute;
@@ -133,4 +141,3 @@ i.icon{
 //    background-size: 100px 100px;
 //  }
 //}
-
